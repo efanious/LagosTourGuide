@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lagos Tour Guide</string>
+    <string name="lekki_location">Lekki</string>
+    <string name="surulere_locations">Surulere</string>
+    <string name="ikeja_locations">Ikeja</string>
+    <string name="festac_locations">Festac</string>
+</resources>
