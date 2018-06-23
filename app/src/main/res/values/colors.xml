@@ -16,4 +16,10 @@
     <!-- Background color for lekki location -->
     <color name="location_festac">#E53940</color>
 
+    <!-- Color for tab text -->
+    <color name="tab_text_color">#F3E5F5</color>
+
+    <!-- Color for tab background -->
+    <color name="tab_background">#4CAF50</color>
+
 </resources>

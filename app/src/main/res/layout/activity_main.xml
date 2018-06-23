@@ -7,31 +7,73 @@
     android:orientation="vertical"
     tools:context="com.example.android.lagostourguide.MainActivity">
 
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        app:tabGravity="fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/tab_text_color"
+        app:tabBackground="@color/tab_background"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="2dp" />
 
+    <!-- View Pager addition-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
+        <!-- Lekki location -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/location_lekki">
+            <TextView
+                android:id="@+id/lekki"
+                style="@style/LocationStyle"
+                android:text="@string/lekki_location"
+                android:background="?android:attr/selectableItemBackground" />
+        </FrameLayout>
 
-    <TextView
-        android:id="@+id/lekki"
-        style="@style/LocationStyle"
-        android:text="@string/lekki_location"
-        android:background="@color/location_lekki"/>
+        <!-- Surulere location -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/location_surulere">
+            <TextView
+                android:id="@+id/surulere"
+                style="@style/LocationStyle"
+                android:text="@string/surulere_locations"
+                android:background="?android:attr/selectableItemBackground"/>
+        </FrameLayout>
 
-    <TextView
-        android:id="@+id/surulere"
-        style="@style/LocationStyle"
-        android:text="@string/surulere_locations"
-        android:background="@color/location_surulere"/>
+        <!-- Ikeja location -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/location_ikeja">
+            <TextView
+                android:id="@+id/ikeja"
+                style="@style/LocationStyle"
+                android:text="@string/ikeja_locations"
+                android:background="?android:attr/selectableItemBackground"/>
 
-    <TextView
-        android:id="@+id/ikeja"
-        style="@style/LocationStyle"
-        android:text="@string/ikeja_locations"
-        android:background="@color/location_ikeja"/>
+        </FrameLayout>
 
-    <TextView
-        android:id="@+id/festac"
-        style="@style/LocationStyle"
-        android:text="@string/festac_locations"
-        android:background="@color/location_festac" />
+        <!-- Festac location -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/location_festac">
+            <TextView
+                android:id="@+id/festac"
+                style="@style/LocationStyle"
+                android:text="@string/festac_locations"
+                android:background="?android:attr/selectableItemBackground" />
+
+        </FrameLayout>
+
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>

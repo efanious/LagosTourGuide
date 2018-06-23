@@ -15,13 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LekkiActivity"
+        <activity
+            android:name=".LekkiActivity"
             android:label="@string/lekki_location" />
-        <activity android:name=".SurulereActivity"
+        <activity
+            android:name=".SurulereActivity"
             android:label="@string/surulere_locations" />
-        <activity android:name=".IkejaActivity"
+        <activity
+            android:name=".IkejaActivity"
             android:label="@string/ikeja_locations" />
-        <activity android:name=".FestacActivity"
+        <activity
+            android:name=".FestacActivity"
             android:label="@string/festac_locations" />
     </application>
 
